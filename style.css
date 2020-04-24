@@ -52,13 +52,12 @@
 }
 /* Esercizio 7 */
 .ex-7-img {
-    transition: filter 5s;
+    transition: filter 2s;
 }
 .ex-7-img:hover {
-    filter: sepia(1);
+    filter: saturate(0.8);
     filter: grayscale(1);
 }
-
 /* Esercizio 8 */
 
 .ex-9-img {
