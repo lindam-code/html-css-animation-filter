@@ -51,6 +51,14 @@
     filter: grayscale(1);
 }
 /* Esercizio 7 */
+.ex-7-img {
+    transition: filter 5s;
+}
+.ex-7-img:hover {
+    filter: sepia(1);
+    filter: grayscale(1);
+}
+
 /* Esercizio 8 */
 
 .ex-9-img {
