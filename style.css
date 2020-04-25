@@ -33,10 +33,10 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: background 0.5s;
+    transition: opacity 0.5s;
 }
 .ex-4-square:hover {
-    background: white;
+    opacity: 0;
 }
 /* Esercizio 5 */
 .ex-5-square {
@@ -65,14 +65,15 @@
     transition: filter 2s;
 }
 .ex-7-img:hover {
-    filter: grayscale(1);
+    filter: grayscale(0.6);
+    filter: sepia(0.5);
 }
 /* Esercizio 8 */
 .ex-8-img:hover {
     transition: all 3s;
 }
 .ex-8-img:hover {
-    filter: grayscale(0.7);
+    filter: grayscale(0.6) sepia(0.5);
     border-radius: 25px;
 }
 /* Esercizio 9 */
@@ -82,7 +83,7 @@
     transition: all 2s;
 }
 .ex-9-img:hover {
-    filter: grayscale(0.8);
+    filter: grayscale(0.6) sepia(0.5);
     border-radius: 25px;
     transform: scale(1.5,1.5);
 }
@@ -106,22 +107,69 @@
 /* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover {
     animation-name: rotation-hover;
     animation-duration: 2s;
-    animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-play-state: paused;
 }
 @keyframes rotation-hover {
     0% {transform: rotate(0deg);}
     90% {transform: rotate(270deg);}
     100% {transform: rotate(0deg);}
 }
-.ex-11-icon:hover {
+/* Esercizio 12 */
+.ex-12-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    animation-name: top-white;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+.ex-12-button:hover {
     animation-play-state: running;
 }
-/* Esercizio 12 e 13 */
-.ex-12-button, .ex-13-button {
+.ex-12-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+@keyframes top-white {
+    0% {left: 10%;}
+    100% {left: 60%;}
+}
+.ex-12-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+/* Esercizio 13 */
+.ex-13-button {
     position: relative;
     display: block;
     width: 200px;
@@ -134,7 +182,7 @@
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+.ex-13-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
@@ -142,7 +190,7 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
