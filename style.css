@@ -68,11 +68,28 @@
     filter: grayscale(1);
 }
 /* Esercizio 8 */
-
+.ex-8-img:hover {
+    transition: all 3s;
+}
+.ex-8-img:hover {
+    filter: grayscale(0.7);
+    border-radius: 25px;
+}
+/* Esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
+.ex-9-img:hover {
+    filter: grayscale(0.8);
+    border-radius: 25px;
+    transform: scale(1.5,1.5);
+}
+
+
+
+
 .ex-10-icon {
     font-size: 60px;
 }
