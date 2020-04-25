@@ -86,16 +86,31 @@
     border-radius: 25px;
     transform: scale(1.5,1.5);
 }
-
-
-
-
+/* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
 }
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+/* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+
+
+/* Esercizio 12 e 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
