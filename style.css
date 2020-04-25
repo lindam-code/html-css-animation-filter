@@ -100,19 +100,19 @@
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(359deg);
     }
 }
 /* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
-    animation-name: rotation;
+    animation-name: rotation-hover;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-play-state: paused;
 }
-@keyframes rotation {
+@keyframes rotation-hover {
     0% {transform: rotate(0deg);}
     90% {transform: rotate(270deg);}
     100% {transform: rotate(0deg);}
